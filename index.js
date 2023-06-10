@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json()); // jokhn kono kisu post korbo tokhn json a convert korar akta automatic korar akta middleware
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.cpiy9ag.mongodb.net/?retryWrites=true&w=majority`;
-console.log(uri);
+
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
     serverApi: {
